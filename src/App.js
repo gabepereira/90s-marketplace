@@ -1,5 +1,7 @@
-import pictureA from './a.jpg';
-import pictureB from './b.jpg';
+import Header from './components/Header';
+import { PublicRouter } from './routes';
+// import pictureA from './a.jpg';
+// import pictureB from './b.jpg';
 
 function cartItems() {
   return []
@@ -8,19 +10,11 @@ function cartItems() {
 function App() {
   return (
     <main>
-      <header>
-        90s shop
-        <nav>
-          <ul style={{listStyleType: 'none', display: 'flex'}}>
-            <li><a href="/">Home</a></li>
-            |
-            <li><a href="/cart">Cart ({cartItems().length})</a></li>
-          </ul>
-        </nav>
-        <hr/>
-      </header>
+      <Header />
 
-      {
+      <PublicRouter />
+
+      {/* {
         window.location.pathname === '/' && (
           <div>
             Welcome to our shop!
@@ -73,7 +67,7 @@ function App() {
             </ul>
           </div>
         )
-      }
+      } */}
     </main>
   );
 }

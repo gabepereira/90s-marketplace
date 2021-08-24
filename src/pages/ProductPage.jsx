@@ -1,22 +1,33 @@
-import { useParams } from 'react-router';
+import { useParams, Redirect } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import ProductCard from '../components/Products/ProductCard/ProductCard';
+import { data } from '../utils/data';
+import './styles.scss';
 
 const ProductPage = () => {
   const { id: productId } = useParams();
 
-  console.log(productId);
+  const products = useSelector((state) => state.cart.products);
+  const dispatch = useDispatch();
+
+  const [product] = data.products.filter(({ id }) => String(id) === productId);
+
+  if (!product) {
+    return <Redirect to="/" />;
+  }
+
+  const isProductAdded = products.indexOf(product.id) !== -1;
+
+  const handleAddToCart = () => {
+    dispatch({ type: 'ADD_TO_CART', payload: product.id });
+  };
 
   return (
-    <section>
-      <div>
-        <h1>Product A</h1>
-        <p>Price: 10 USD</p>
-
-        <button onClick={() => console.warn('Not implemented!')}>
-          Add to cart
-        </button>
-
-        {/* <div><img src={pictureA} width={640}/></div> */}
-      </div>
+    <section className="product-page">
+      <ProductCard data={product} mode="large" />
+      <button className="btn" onClick={handleAddToCart}>
+        {isProductAdded ? 'Product Added' : 'Add to cart'}
+      </button>
     </section>
   );
 };

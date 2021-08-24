@@ -9,22 +9,6 @@ export const data = {
       sizes: ['38'],
     },
     {
-      id: 118372,
-      currency: '$',
-      price: '2500,00',
-      name: 'Parra x Nike SB Dunk Low Pro Abstract Art',
-      image: 'https://droper-media.s3.amazonaws.com/248202118015451.jpg',
-      sizes: ['39'],
-    },
-    {
-      id: 118371,
-      currency: '$',
-      price: '2999,99',
-      name: 'Fragment Design x sacai x Nike LDV Waffle Blackened Blue',
-      image: 'https://droper-media.s3.amazonaws.com/248202118113674.jpg',
-      sizes: ['44'],
-    },
-    {
       id: 118370,
       currency: '$',
       price: '1649,00',
@@ -72,14 +56,7 @@ export const data = {
       image: 'https://droper-media.s3.amazonaws.com/248202117542428.jpg',
       sizes: ['43'],
     },
-    {
-      id: 118362,
-      currency: '$',
-      price: '2199,00',
-      name: 'Fragment Design x sacai x Nike LDV Waffle Blackened Blue',
-      image: 'https://droper-media.s3.amazonaws.com/2482021175316176.jpg',
-      sizes: ['39'],
-    },
+
     {
       id: 118360,
       currency: '$',
@@ -88,14 +65,7 @@ export const data = {
       image: 'https://droper-media.s3.amazonaws.com/2482021175224286.jpg',
       sizes: ['44'],
     },
-    {
-      id: 118359,
-      currency: '$',
-      price: '2800,00',
-      name: 'Fragment Design x sacai x Nike LDV Waffle Blackened Blue',
-      image: 'https://droper-media.s3.amazonaws.com/2482021175146781.jpg',
-      sizes: ['42.5'],
-    },
+
     {
       id: 118358,
       currency: '$',
@@ -121,22 +91,6 @@ export const data = {
       sizes: ['41'],
     },
     {
-      id: 118355,
-      currency: '$',
-      price: '3485,00',
-      name: 'Fragment Design x sacai x Nike LDV Waffle Light Smoke Grey',
-      image: 'https://droper-media.s3.amazonaws.com/2482021174852106.jpg',
-      sizes: ['36'],
-    },
-    {
-      id: 118353,
-      currency: '$',
-      price: '2500,00',
-      name: 'Fragment Design x sacai x Nike LDV Waffle Blackened Blue',
-      image: 'https://droper-media.s3.amazonaws.com/24820211747260.jpg',
-      sizes: ['36', '39', '42', '42.5', '43'],
-    },
-    {
       id: 118350,
       currency: '$',
       price: '1300,00',
@@ -144,14 +98,7 @@ export const data = {
       image: 'https://droper-media.s3.amazonaws.com/248202117466171.jpg',
       sizes: ['37'],
     },
-    {
-      id: 118347,
-      currency: '$',
-      price: '1999,00',
-      name: 'Medicom Toy x Nike SB Dunk Be@rbrick',
-      image: 'https://droper-media.s3.amazonaws.com/248202117468200.jpg',
-      sizes: ['43'],
-    },
+
     {
       id: 118346,
       currency: '$',
@@ -161,28 +108,12 @@ export const data = {
       sizes: ['46'],
     },
     {
-      id: 118345,
-      currency: '$',
-      price: '3000,00',
-      name: 'Fragment Design x sacai x Nike LDV Waffle Light Smoke Grey',
-      image: 'https://droper-media.s3.amazonaws.com/2482021174526671.jpg',
-      sizes: ['41'],
-    },
-    {
       id: 118344,
       currency: '$',
       price: '2999,00',
       name: 'Fragment Design x sacai x Nike LDV Waffle Light Smoke Grey',
       image: 'https://droper-media.s3.amazonaws.com/2482021174357171.jpg',
       sizes: ['42.5'],
-    },
-    {
-      id: 118343,
-      currency: '$',
-      price: '3300,00',
-      name: 'Fragment Design x sacai x Nike LDV Waffle Light Smoke Grey',
-      image: 'https://droper-media.s3.amazonaws.com/2482021174432832.jpg',
-      sizes: ['39.5'],
     },
     {
       id: 118342,

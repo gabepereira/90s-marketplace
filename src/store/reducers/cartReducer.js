@@ -1,24 +1,26 @@
 const initialState = {
-  items: [],
+  products: [],
 };
 
 const cartReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'ADD_TO_CART':
-      return state.items.indexOf(action.payload) !== -1
+      return state.products.indexOf(action.payload) !== -1
         ? state
-        : { ...state, items: [...state.items, action.payload] };
+        : { ...state, products: [...state.products, action.payload] };
 
     case 'REMOVE_FROM_CART':
       return {
         ...state,
-        items: state.items.filter((item) => item !== action.payload),
+        products: state.products.filter(
+          (product) => product !== action.payload
+        ),
       };
 
     case 'CLEAR_CART':
       return {
         ...state,
-        items: [],
+        products: [],
       };
 
     default:

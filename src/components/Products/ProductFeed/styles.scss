@@ -1,0 +1,9 @@
+.feed {
+  padding: 24px;
+
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

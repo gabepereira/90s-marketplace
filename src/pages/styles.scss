@@ -1,5 +1,15 @@
-.product-page {
+.product-page,
+.cart-page {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.product-page {
+  flex-direction: column;
+
+  .btn {
+    width: 200px;
+    margin: 24px;
+  }
 }

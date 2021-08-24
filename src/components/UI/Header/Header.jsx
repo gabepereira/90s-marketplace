@@ -1,4 +1,5 @@
 import Logo from '../Logo';
+import { Link } from 'react-router-dom';
 import { headerLinks, isPageActive } from '../../../utils/sitemap';
 import './styles.scss';
 
@@ -9,13 +10,13 @@ const Header = () => {
       <nav>
         <ul style={{ listStyleType: 'none', display: 'flex' }}>
           {headerLinks.map(({ path, name }) => (
-            <a
+            <Link
               key={path}
               className={isPageActive(path) ? 'active' : ''}
-              href={path}
+              to={path}
             >
               {name}
-            </a>
+            </Link>
           ))}
         </ul>
       </nav>

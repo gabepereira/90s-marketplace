@@ -1,50 +1,50 @@
 import cartReducer from './cartReducer';
 
-describe('when cartReducer is in use', () => {
-  test('should should return the initial state for default action', () => {
-    expect(cartReducer(undefined, {})).toEqual({ items: [] });
+describe('cartReducer', () => {
+  test('should return the initial state for default action', () => {
+    expect(cartReducer(undefined, {})).toEqual({ products: [] });
   });
 
-  test('should add item to cart when ADD_TO_CART action is used', () => {
+  test('should add product to cart when ADD_TO_CART is called', () => {
     const id = 1;
     const action = {
       type: 'ADD_TO_CART',
       payload: id,
     };
     const state = {
-      items: [],
+      products: [],
     };
     expect(cartReducer(state, action)).toEqual({
       ...state,
-      items: [...state.items, id],
+      products: [...state.products, id],
     });
   });
 
-  test('should remove item from cart when REMOVE_FROM_CART action is used', () => {
+  test('should remove product from cart when REMOVE_FROM_CART action is called', () => {
     const id = 1;
     const action = {
       type: 'REMOVE_FROM_CART',
       payload: id,
     };
     const state = {
-      items: [id, 2, 3],
+      products: [id, 2, 3],
     };
     expect(cartReducer(state, action)).toEqual({
       ...state,
-      items: state.items.filter((item) => item !== id),
+      products: state.products.filter((item) => item !== id),
     });
   });
 
-  test('should clear cart when CLEAR_CART action is used', () => {
+  test('should clear cart when CLEAR_CART action is called', () => {
     const action = {
       type: 'CLEAR_CART',
     };
     const state = {
-      items: [1, 2, 3],
+      products: [1, 2, 3],
     };
     expect(cartReducer(state, action)).toEqual({
       ...state,
-      items: [],
+      products: [],
     });
   });
 });
